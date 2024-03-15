@@ -1,0 +1,21 @@
+{
+    "author": "Wilson Pau",
+    "exported_at": "2022-12-16T16:03:12",
+    "expressions": [
+        {
+            "description": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Filter by start and end date of line</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>",
+            "expression": "(attribute('begin') >= make_datetime(2021, 11, 11, 0, 0, 0)) AND (attribute('end')<= make_datetime(2021, 11, 12,0, 0, 0))",
+            "group": "user",
+            "name": "(attribute('begin') >= make_datetime(2021, 11, 11, 0, 0, 0)) AND (attribute('end')<= make_datetime(2021, 11, 12,0, 0, 0))",
+            "type": "expression"
+        },
+        {
+            "description": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">overlay_find nearest point take time</p>\n<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>",
+            "expression": "array_to_string(overlay_nearest('2021-11-01', expression:=\"Master Update Time\", filter:= \"overall_tn\" = attribute('overall_tn')))",
+            "group": "user",
+            "name": "array_to_string(overlay_nearest('2021-11-01', expression:=\"Master Update Time\", filter:= \"overall_tn\" = attribute('overall_tn')))",
+            "type": "expression"
+        }
+    ],
+    "qgis_version": "3.26.2-Buenos Aires"
+}
