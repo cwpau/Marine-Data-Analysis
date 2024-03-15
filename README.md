@@ -15,3 +15,5 @@ sqlexport_process.py: export from SQL database to create individual csvs for eac
 Move to QGIS, and run trial.py: 5 steps in total to produce results and screenshots.
 
 ![Example](fig_20211116.png)
+
+![](result_screenshot.png)
