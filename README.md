@@ -1,6 +1,6 @@
 # Marine-Data-Analysis
 A Data analysis and visualization project to analyze the marine traffic in the designated area.
-Scripts in python language can be used in QGIS (an opensource GIS software)
+Here, I showed some scripts in python language that can be used in QGIS (an opensource GIS software) to streamline the data processing.
 
 <ins>Step 1</ins><br />
 datacleaning.py: The procedures starts with data cleaning to remove poor data (there were ships that moves faster than a rocket!)
